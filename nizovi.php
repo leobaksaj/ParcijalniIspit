@@ -2,6 +2,7 @@
 
     $primeNumbers = [ 4, 2, 6, 10, 8 ];
 
+    echo 'Jednodimenzionalni niz vjezba 1 <br>';
     echo 'Provjera postoji li u nizu treci element: ';
     var_dump( isset($primeNumbers[3] ) );
 
@@ -49,6 +50,49 @@
     krsort( $primeNumbers );
     echo '<br>';
     print_r($primeNumbers);
+
+    echo '<br><br>';
+    echo 'Visedimenzionalni niz vjezba 2 <br>';
+
+    $users = [
+        [
+            'ime'     => 'Luka',
+            'prezime' => 'Lukic',
+            'godine'  => 25,
+            'spol'    => 'Muski'
+        ],
+        [
+            'ime'     => 'Ivan',
+            'prezime' => 'Horvat',
+            'godine'  => 28,
+            'spol'    => 'Muski'
+        ]
+    ];
+
+    echo 'Cijeli niz: <br>';
+    print_r( $users );
+
+    echo '<br><br>';
+
+    unset( $users[0]['spol'] );
+    unset( $users[1]['spol'] );
+    echo 'Niz nakon uklanjanja kljuca "spol" <br>';
+    print_r( $users );
+
+    echo '<br><br>';
+
+    $users[] = [
+        'ime'     => 'Ivan',
+        'prezime' => 'Horvat',
+        'godine'  => 28
+    ];
+
+    echo 'Ddoan novi korisnik u niz: <br>';
+    print_r( $users );
+
+
+
+
 
 
 ?>
