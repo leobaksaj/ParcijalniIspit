@@ -25,3 +25,11 @@ td{
     border-bottom: 1px solid #ddd;
     text-align: center;
 }
+
+td.inactiv{
+    color: red;
+}
+
+td.active{
+    color: green;
+}
