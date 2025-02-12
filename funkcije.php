@@ -57,7 +57,7 @@
         'zbrajanje'  => 'zbrajanje',
         'oduzimanje' => 'oduzimanje',
         'mnozenje'   => 'mnozenje',
-        'dijelenje'  => 'dijelenje',
+        'dijeljenje' => 'dijeljenje',
     ];
 
     foreach( $operacije as $key => $operacija ){
@@ -67,16 +67,16 @@
 
 
     function zbrajanje( $a, $b ){
-        echo "Zbroj je: ". $a + $b;
+        echo "Zbrajanje: ". $a + $b;
     }
     function oduzimanje( $a, $b ){
-        echo "Razlika je: ". $a - $b;
+        echo "Oduzimanje: ". $a - $b;
     }
     function mnozenje( $a, $b ){
-        echo "Umnožak je: ". $a * $b;
+        echo "Množenje: ". $a * $b;
     }
-    function dijelenje( $a, $b ){
-        echo "Djelitelj je: ". $a / $b;
+    function dijeljenje( $a, $b ){
+        echo "Dijeljenje: ". $a / $b;
     }
 
 ?>
