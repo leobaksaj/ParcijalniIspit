@@ -33,3 +33,79 @@ td.inactiv{
 td.active{
     color: green;
 }
+
+nav{
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    background-color: #007bff;
+    padding: 20px;
+}
+
+nav a{
+    color: #ffffff;
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* FORME CSS */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Razmak između elemenata */
+}
+
+.newsletter input {
+    margin: 0; /* Uklanja default margine */
+}
