@@ -1,6 +1,4 @@
 <?php 
-
-///////////// ZADATAK DZ
 /*
 
  PHP generira 10 nasumičnih brojeva (1-100) i sprema ih u brojevi.json, svaki u novi red.
