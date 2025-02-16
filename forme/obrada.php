@@ -24,8 +24,13 @@
             if( !is_dir( $uploadDir ) )
                 mkdir($uploadDir, 0777, true );
 
+            $counter = 1;
+            while( file_exists($uploadFile) ){
+                $uploadFile = $uploadDir.$counter.basename( $_FILES['cv']['name'] );
+                $counter++;
+            }
+
             if( move_uploaded_file( $_FILES['cv']['tmp_name'], $uploadFile ) ){
-                echo 'Successfully uploaded file!';
                 sleep(2);
                 header("Location: http://localhost/forme/obrazac.php?success=1");
             }else{
